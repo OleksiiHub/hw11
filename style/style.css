@@ -4,6 +4,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   max-width: 1200px;
+  max-height: 1667px;
 }
 img {
   width: 385px;
@@ -39,6 +40,7 @@ h4 {
 .style_color_left {
   background: #86a3b4;
   border-right: 1px solid #000;
+  height: 1667px;
 }
 .logo {
   margin: 58px 0 36px 40px;
