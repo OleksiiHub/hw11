@@ -72,5 +72,35 @@ p {
 .dscr_style {
   font-size: 16px;
   line-height: 19px;
+
   max-width: 706px;
+}
+.style_skills {
+  display: flex;
+}
+ul {
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 1rem;
+}
+.col-50 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.exp_style {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.exp_style_font-weight {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.exp_style_padding-top{
+  padding-top: 15px;
+}
+.education_style{
+  font-weight: 400;
 }
