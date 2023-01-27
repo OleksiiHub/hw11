@@ -1,3 +1,12 @@
+:root{
+
+
+  --border-first-width: 5px solid;
+  --border-secondary-width: 6px solid;
+  --font-size-standart: 16px;
+  --h4-margin:31px 0 11px 0px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,11 +26,11 @@ h2 {
   font-size: 36px;
   line-height: 44px;
   padding-bottom: 28px;
-  border-bottom: 5px solid #000000;
+  border-bottom: var(--border-first-width) var(--color-text);
   width: 659px;
 }
 h3 {
-  border-bottom: 6px solid #1e1e1e;
+  border-bottom: var(--border-secondary-width) var(--color-text);
   width: 289px;
   margin: 0;
   font-size: 32px;
@@ -31,15 +40,15 @@ h3 {
 h4 {
   font-size: 24px;
   line-height: 29px;
-  margin: 31px 0 11px 0px;
+  margin: var(--h4-margin);
 }
 .contact_style {
-  font-size: 16px;
+  font-size: var(--font-size-standart);
   line-height: 19px;
 }
 .style_color_left {
-  background: #86a3b4;
-  border-right: 1px solid #000;
+  background: var(--color-main-primary);
+  border-right: 1px solid var(--color-text);
   height: auto;
 }
 .logo {
@@ -72,9 +81,8 @@ p {
   margin: 28px 0 0 55px;
 }
 .dscr_style {
-  font-size: 16px;
+  font-size: var(--font-size-standart);
   line-height: 19px;
-
   max-width: 706px;
 }
 .style_skills {
@@ -82,7 +90,7 @@ p {
 }
 ul {
   padding: 0;
-  font-size: 16px;
+  font-size: var(--font-size-standart);
   line-height: 19px;
   margin-left: 1rem;
 }
