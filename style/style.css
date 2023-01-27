@@ -40,7 +40,7 @@ h4 {
 .style_color_left {
   background: #86a3b4;
   border-right: 1px solid #000;
-  height: 1667px;
+  height: auto;
 }
 .logo {
   margin: 58px 0 36px 40px;
@@ -100,9 +100,9 @@ ul {
   line-height: 17px;
   font-weight: 400;
 }
-.exp_style_padding-top{
+.exp_style_padding-top {
   padding-top: 15px;
 }
-.education_style{
+.education_style {
   font-weight: 400;
 }
