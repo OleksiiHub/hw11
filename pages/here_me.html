@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork_4</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="text_center">
+          <h1>Hire me</h1>
+          <h4>Contact information</h4>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td><b>Phone</b></td>
+              <td>+380661231231</td>
+            </tr>
+            <tr>
+              <td><b>Address</b></td>
+              <td>Somewhere in Ukraine</td>
+            </tr>
+          </tbody>
+        </table>
+        <form action="">
+          <fieldset>
+            <legend>Contact form</legend>
+            <div class="main">
+              <div class="style_label error_text">
+                <label for="email" class="">E-mail<span>*</span>:</label>
+                <div class="form__field">
+                  <input
+                    class="size_form_item"
+                    required
+                    id="email"
+                    type="email"
+                    placeholder="Enter your e-mail"
+                  />
+                  <span class="form__error">Error message</span>
+                </div>
+              </div>
+              <div class="style_label">
+                <label for="descr">Description:</label>
+                <textarea
+                  class="size_form_item"
+                  name="description"
+                  id="descr"
+                  cols="25"
+                  rows="5"
+                ></textarea>
+              </div>
+              <br />
+              <div class="style_label">
+                <label for="w_type">Work type:</label>
+                <select class="style_select" name="" id="w_type">
+                  <option value="">Work in home</option>
+                  <option value="">Work in office</option>
+                  <option value="">Full-time</option>
+                </select>
+              </div>
+              <br />
+              <br />
+              <button type="submit" class="btn">Hire me</button>
+              <!-- <a href="./pages/index.html" type="submit" class="btn">Hire me</a> -->
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

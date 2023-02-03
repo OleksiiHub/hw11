@@ -1,0 +1,112 @@
+table {
+  border-spacing: 0 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th,
+table td {
+  border: 1px solid #2f2c2c;
+  padding: 0.25rem 0.5rem;
+  border-color: #0048d9;
+}
+.container {
+  max-width: 1024px;
+  width: 80%;
+  margin: 0 auto;
+}
+fieldset {
+  border: 1px solid #2f2c2c;
+  border-color: #0048d9;
+  margin: 0;
+}
+span {
+  color: red;
+}
+div.style_label {
+  padding-bottom: 5px;
+}
+.style_label {
+  clear: both;
+  text-align: right;
+}
+label {
+  float: left;
+  padding-right: 0.3rem;
+}
+.main {
+  float: left;
+}
+.size_form_item {
+  width: 258px;
+}
+.style_select{
+  width: 266px;
+}
+input,
+textarea {
+  border: 1px solid black;
+  padding: 0.2rem;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+.form__field {
+  margin-bottom: 10px;
+}
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+
+}
+.btn {
+  background: #0048d9;
+  border-radius: 6px;
+  width: 100px;
+  height: 38px;
+  color: wheat;
+  text-align: center;
+  padding: .5rem;
+  
+}
+a{
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 2px 2px 2px 2px #0048d955;
+}
+td + td {
+  color: #0048d9;
+}
+select {
+  appearance: none;
+  padding: 0.2rem;
+  min-width: 10rem;
+  background: url("./arrow_drop.png") no-repeat center right 0.1rem;
+}
+.text_center {
+  text-align: center;
+}
+/* .error_text{
+  position: relative;
+}
+.error_text:before{
+  position: absolute;
+  content: "Error message";
+  color:red;
+  top: 26px;
+  right: 193px;
+  font-size: 12px;
+} */
+
