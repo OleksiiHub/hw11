@@ -36,12 +36,16 @@ h4 {
   text-align: center;
 }
 .btn {
+  display: block;
   border: 1px solid #fff;
   border-radius: 6px;
   text-align: center;
   padding: 0.5rem 2rem;
   color: #fff;
   margin-top: .5rem;
+}
+.btn:hover{
+  border-color: red;
 }
 a {
   text-decoration: none;
@@ -57,7 +61,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.667) 0px 0px 20.6px;
 }
 .logo {
-  margin: 3.625rem 0 2.25rem 2.5rem;
+  margin: 3.625rem 2.5rem 2.25rem 2.5rem;
 }
 .style_languages {
   font-size: 20px;
@@ -78,6 +82,7 @@ a {
 p {
   margin: 0;
   padding: 0;
+  width: 80%;
 }
 .style_right {
   padding: 1.75rem 0 2rem 3.5rem;
@@ -141,6 +146,9 @@ ul {
   .scale:hover {
     transform: translateX(0) scale(0);
   }
+  h1{
+    text-align: center;
+  }
   h2 {
     border-bottom: 0.375rem solid #000000;
   }
@@ -174,16 +182,6 @@ ul {
   .d-flex {
     display: block;
   }
-  .style_skills {
-    display: flex;
-  }
-  p {
-    width: 80%;
-  }
 }
-@media (min-width: 774px) and (max-width: 1200px) {
-  p {
-    width: 80%;
-  }
-}
+
 
