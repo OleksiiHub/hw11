@@ -1,3 +1,7 @@
+@import 'theme'
+
+$border_style: solid #000
+$color_white: #fff
 body 
   margin: 0
   padding: 0
@@ -12,10 +16,10 @@ h2
   font-size: 2.25rem
   line-height: 2.75rem
   padding-bottom: 1.75rem
-  border-bottom: 0.3125rem solid #000000
+  border-bottom: 0.3125rem $border_style
   width: 80%
 h3 
-  border-bottom: 0.375rem solid #000000
+  border-bottom: 0.375rem $border_style
   width: 80%
   margin: 0
   font-size: 2rem
@@ -29,11 +33,11 @@ h4
   text-align: center
 .btn 
   display: block
-  border: 1px solid #fff
+  border: 1px solid $color_white
   border-radius: 6px
   text-align: center
   padding: 0.5rem 2rem
-  color: #fff
+  color: $color_white
   margin-top: 0.5rem
 .btn:hover 
   border-color: red
@@ -59,16 +63,21 @@ p
   margin: 0
   padding: 0
   width: 80%
-.style_color_left 
-  background: #86a3b4
-  border-right: 1px solid #000
+
+@mixin ani_page_left($second_left)
+  animation: expand $second_left linear
+@mixin ani_page_right($second_right)
+  animation: expand $second_right linear  
+
+.style_left 
+  border-right: 1px $border_style
   z-index: 2
   box-shadow: rgba(0, 0, 0, 0.667) 0px 0px 20.6px
-  animation: expand 1s linear
+  @include ani_page_left(1s)
 .style_right 
   padding: 1.75rem 0 2rem 3.5rem
-  background: #fff
-  animation: expand 2s linear
+  background: $color_white
+  @include ani_page_right(2s)
 @keyframes expand 
   0% 
     margin-top: 50vh
@@ -108,11 +117,11 @@ ul
     animation: style_descr_ani 2s
 @keyframes style_descr_ani 
   0% 
-    opacity: 50% 
+    opacity: 70% 
   33% 
-    opacity: 65% 
+    opacity: 80% 
   66% 
-    opacity: 80%  
+    opacity: 90%  
   100% 
     opacity: 100%
 .exp_style_padding-top 
@@ -133,7 +142,7 @@ ul
   h1 
     text-align: center
   h2 
-    border-bottom: 0.375rem solid #000000  
+    border-bottom: 0.375rem $border_style  
   img 
     max-width: 320px  
   .style_contact_left 
@@ -141,19 +150,17 @@ ul
   .style_right 
     padding: 1.75rem 0 0 2.5rem  
   main.d-flex 
-    background: #fff  
+    background: $color_white 
   .style_languages 
     padding-bottom: 2rem  
-  .style_color_left
-    background: #86a3b4
+  .style_left
     border-right: 0
-    border-bottom: 1px solid #000  
+    border-bottom: 1px $border_style  
   .img_adaptive 
     display: flex
     justify-content: center
     flex-wrap: wrap
     gap: 0.5rem
- 
   .d-flex 
     display: block
   
