@@ -52,26 +52,35 @@ textarea {
   padding: 0.2rem;
 }
 
-input:valid:not(:placeholder-shown) {
-  border-color: green;
+input:valid{
+  border-color:green;
+}
+input:invalid{
+  border-color:red;
+}
+input:invalid + span::before {
+  /* border-color:red; */
+  content: "Error";
+  color: red;
 }
 
-input:invalid:not(:placeholder-shown) {
-  border-color: red;
+input:valid + span::before {
+  /* border-color:green; */
+  content: "Success";
+  color: green;
 }
-input:invalid:not(:placeholder-shown) + .form__error {
-  display: block;
-}
+
 .form__field {
   margin-bottom: 10px;
 }
-.form__error {
-  color: red;
+.form__msg {
+  position: relative;
+  left:85px;
   text-align: left;
   font-size: 12px;
   display: block;
   margin-top: 3px;
-  display: none;
+  display: block;
 
 }
 .btn {
@@ -120,7 +129,7 @@ select {
     opacity: 0;
   }
   10% {
-    transform: scale(190%%);
+    transform: scale(190%);
     opacity: 10%;
   }
   20% {
@@ -140,7 +149,7 @@ select {
     opacity: 50%;
   }
   60% {
-    transform: scale(140%%);
+    transform: scale(140%);
     opacity: 60%;
   }
   70% {
