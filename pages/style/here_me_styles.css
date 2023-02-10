@@ -50,6 +50,7 @@ input,
 textarea {
   border: 1px solid black;
   padding: 0.2rem;
+  border-radius:5px;
 }
 
 input:valid{
@@ -78,11 +79,11 @@ input:valid + span::before {
   left:85px;
   text-align: left;
   font-size: 12px;
-  display: block;
   margin-top: 3px;
   display: block;
 
 }
+
 .btn {
   background: #0048d9;
   border-radius: 6px;
@@ -107,6 +108,7 @@ select {
   padding: 0.2rem;
   min-width: 10rem;
   background: url("./arrow_drop.png") no-repeat center right 0.1rem;
+  border-radius:5px;
 }
 .text_center {
   text-align: center;
