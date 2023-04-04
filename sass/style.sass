@@ -133,8 +133,11 @@ ul
 .education_style 
   font-weight: 400
 @media (min-width: 774px) 
-    .ani_image:hover 
-        animation: scale_ani 1s linear
+    .ani_image
+        animation: scale_ani 2s linear forwards
+    .ani_image2
+        animation: scale_ani2 2s linear forwards
+
 @keyframes scale_ani 
   0% 
     transform: scale(1)  
@@ -142,6 +145,15 @@ ul
     transform: translateX(25%) scale(1.5)
   100% 
     transform: translateX(50%) scale(2)
+@keyframes scale_ani2 
+  0% 
+    transform: translateX(50%) scale(2)
+
+  50% 
+    transform: translateX(25%) scale(1.5)
+  100% 
+        transform: scale(1)  
+
 @media (min-width: 320px) and (max-width: 773px) 
   h1 
     text-align: center
