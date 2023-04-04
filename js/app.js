@@ -17,22 +17,22 @@ const searchNav = document.querySelector('.navSymbol');
 
 searchNav.addEventListener('keyup', (event) => {
     if(event.key === "C" || "c") {
-        window.location.href = '#symC';
+        window.location.href = 'C';
     };
     if(event.key === "L" || "l") {
-        window.location.href = '#symL';
+        window.location.href = '#L';
     };
     if(event.key === "S" || "s") {
-        window.location.href = '#symS';
+        window.location.href = '#S';
     };
     if(event.key === "H" || "h") {
-        window.location.href = '#symH';
+        window.location.href = '#H';
     };
     if(event.key === "W" || "w") {
-        window.location.href = '#symW';
+        window.location.href = '#W';
     };
     if(event.key === "E" || "e") {
-        window.location.href = '#symE';
+        window.location.href = 'E';
     };
 });
 
