@@ -13,26 +13,19 @@ function AnimationHandler () {
 
 
 
-const searchNav = document.querySelector('.navSymbol');
+const paragraphs = {
+    c: document.querySelector(".symbolC"),
+    l: document.querySelector(".symbolL"),
+    s: document.querySelector(".symbolS"),
+    h: document.querySelector(".symbolH"),
+    w: document.querySelector(".symbolW"),
+    e: document.querySelector(".symbolE")
 
-searchNav.addEventListener('keyup', (event) => {
-    if(event.key === "C" || "c") {
-        window.location.href = 'C';
-    };
-    if(event.key === "L" || "l") {
-        window.location.href = '#L';
-    };
-    if(event.key === "S" || "s") {
-        window.location.href = '#S';
-    };
-    if(event.key === "H" || "h") {
-        window.location.href = '#H';
-    };
-    if(event.key === "W" || "w") {
-        window.location.href = '#W';
-    };
-    if(event.key === "E" || "e") {
-        window.location.href = 'E';
-    };
-});
+  };
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    if (paragraphs[key]) {
+      paragraphs[key].scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  });
 
