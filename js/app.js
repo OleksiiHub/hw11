@@ -8,7 +8,7 @@ function renderRepos(myRepos) {
         <td><a href = "${repos.html_url}">${repos.html_url}</a></td>
         <td><a>${repos.description || '---'}</a></td>
     </tr>`;
-  });
+  }, '');
   document.querySelector('.table tbody').innerHTML = htmlStr;
 }
 
