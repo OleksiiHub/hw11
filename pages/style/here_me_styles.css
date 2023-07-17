@@ -1,0 +1,174 @@
+table {
+  border-spacing: 0 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th,
+table td {
+  border: 1px solid #2f2c2c;
+  padding: 0.25rem 0.5rem;
+  border-color: #0048d9;
+}
+.container {
+  max-width: 1024px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+main{
+  animation: scale_page .4s;
+}
+fieldset {
+  border: 1px solid #2f2c2c;
+  border-color: #0048d9;
+  margin: 0;
+}
+span {
+  color: red;
+}
+div.style_label {
+  padding-bottom: 5px;
+}
+.style_label {
+  clear: both;
+  text-align: right;
+}
+label {
+  float: left;
+  padding-right: 0.3rem;
+}
+.main {
+  float: left;
+}
+.size_form_item {
+  width: 258px;
+}
+.style_select{
+  width: 266px;
+}
+input,
+textarea {
+  border: 1px solid black;
+  padding: 0.2rem;
+  border-radius:5px;
+}
+
+input:valid{
+  border-color:green;
+}
+input:invalid{
+  border-color:red;
+}
+input:invalid + span::before {
+  /* border-color:red; */
+  content: "Error";
+  color: red;
+}
+
+input:valid + span::before {
+  /* border-color:green; */
+  content: "Success";
+  color: green;
+}
+
+.form__field {
+  margin-bottom: 10px;
+}
+.form__msg {
+  position: relative;
+  left:85px;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 3px;
+  display: block;
+
+}
+
+.btn {
+  background: #0048d9;
+  border-radius: 6px;
+  width: 100px;
+  height: 38px;
+  color: wheat;
+  text-align: center;
+  padding: .5rem;
+  
+}
+a{
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: 2px 2px 2px 2px #0048d955;
+}
+td + td {
+  color: #0048d9;
+}
+select {
+  appearance: none;
+  padding: 0.2rem;
+  min-width: 10rem;
+  background: url("./arrow_drop.png") no-repeat center right 0.1rem;
+  border-radius:5px;
+}
+.text_center {
+  text-align: center;
+}
+/* .error_text{
+  position: relative;
+}
+.error_text:before{
+  position: absolute;
+  content: "Error message";
+  color:red;
+  top: 26px;
+  right: 193px;
+  font-size: 12px;
+} */
+
+@keyframes scale_page {
+  0% {
+    transform: scale(200%);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(190%);
+    opacity: 10%;
+  }
+  20% {
+    transform: scale(180%);
+    opacity: 20%;
+  }
+  30% {
+    transform:scale(170%);
+    opacity: 30%;
+  }
+  40% {
+    transform: scale(160%);
+    opacity: 40%;
+  }
+  50% {
+    transform: scale(150%);
+    opacity: 50%;
+  }
+  60% {
+    transform: scale(140%);
+    opacity: 60%;
+  }
+  70% {
+    transform: scale(130%);
+    opacity: 70%;
+  }
+  80% {
+    transform:scale(120%);
+    opacity: 80%;
+  }
+  90% {
+    transform:scale(110%);
+    opacity: 90%;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 100%;
+  }
+}
+
